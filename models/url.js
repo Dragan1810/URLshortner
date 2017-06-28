@@ -5,18 +5,18 @@ const Schema = mongoose.Schema;
 
 
 const URLSchema = new Schema({
-    oldURL: {
+    url: {
         type: String,
         required: [true,"ENTEEEER"]
     },
 
-    newURL: {
+    shorty: {
         type: Number
     }
     
 })
 
 // Geo_Loc
-const URLi = mongoose.model('URL',URLSchema);
+const URLy = mongoose.model('URL',URLSchema);
 
-module.exports = URLi;
+module.exports = URLy;
